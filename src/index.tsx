@@ -21,4 +21,4 @@ setPragma(h)
 //     <${RedBackground}>Blue<div class=${redText}>There you are</div><//>
 //   `
 
-register(App, 'pimello-cms', ['name'])
+register(App, 'fari-lari', ['name'])
