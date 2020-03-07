@@ -1,0 +1,26 @@
+{
+  "webDependencies": [
+    "htm",
+    "preact",
+    "goober",
+    "react-hook-form"
+  ],
+  "installOptions": {
+    "dest": "web_modules",
+    "clean": false,
+    "optimize": false,
+    "babel": false,
+    "include": "src/**/*.{js,jsx,ts,tsx}",
+    "exclude": ["**/__tests__/*", "**/*.@(spec\|test).@(js\|mjs)"],
+    "strict": false,
+    "sourceMap": true,
+    "remotePackage": [],
+    "remoteUrl": "https://cdn.pika.dev",
+    "nomodule": "src/index.js",
+    "nomoduleOutput": "app.nomodule.js"
+  },
+  "dedupe": ["lit-element", "lit-html"],
+  "rollup": {
+    "plugins": []
+  }
+}

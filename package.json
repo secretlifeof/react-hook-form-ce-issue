@@ -1,0 +1,34 @@
+{
+  "name": "pimello",
+  "version": "0.0.1",
+  "license": "MIT",
+  "source": "src/index.tsx",
+  "main": "build/index.js",
+  "module": "build/index.modern.js",
+  "scripts": {
+    "build": "microbundle --alias react=preact/compat,react-dom=preact/compat",
+    "dev": "microbundle --alias react=preact/compat,react-dom=preact/compat watch",
+    "watch": "babel src/ --out-dir build --extensions '.ts,.tsx' --watch"
+  },
+  "dependencies": {
+    "@babel/preset-typescript": "^7.8.3",
+    "formik": "^2.1.4",
+    "goober": "^1.7.1",
+    "htm": "^3.0.3",
+    "preact": "^10.3.3",
+    "preact-custom-element": "^3.0.0",
+    "react-hook-form": "^4.10.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "microbundle": "^0.12.0-next.8",
+    "rollup": "^2.0.0-2",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "snowpack": "^1.5.2"
+  }
+}
